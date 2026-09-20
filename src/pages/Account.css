@@ -1,0 +1,142 @@
+.account-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.account-page > h1 {
+  margin-bottom: 25px;
+}
+
+.account-card {
+  padding: 35px;
+  text-align: center;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  background: white;
+}
+
+.account-avatar {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111;
+  color: white;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.account-card p {
+  color: #777;
+}
+
+.account-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.account-actions a {
+  padding: 20px;
+
+  text-align: center;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  color: #111;
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.account-actions a:hover {
+  background: #f5f5f5;
+}
+
+.account-summary {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+
+  margin: 30px 0;
+}
+
+.account-summary div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.account-summary strong {
+  font-size: 25px;
+}
+
+.account-summary span {
+  color: #777;
+}
+
+.logout-btn {
+  display: block;
+
+  margin: auto;
+
+  padding: 12px 35px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #dc2626;
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.account-empty {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.account-empty p {
+  color: #777;
+  margin: 15px 0 25px;
+}
+
+.account-empty a {
+  display: inline-block;
+
+  padding: 12px 25px;
+
+  background: #111;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+}
+
+@media (max-width: 700px) {
+  .account-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .account-summary {
+    gap: 30px;
+  }
+}
